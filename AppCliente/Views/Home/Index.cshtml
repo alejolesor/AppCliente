@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Sign in", "SignIn", "Home", routeValues: null, htmlAttributes: new { id = "signUpSignInLink" })
+
+@if (!Request.IsAuthenticated)
+{
+    <label type="type" name="name" value="Ingrese a la aplicacion" />
+}
+else{
+
+@Html.ActionLink("Sign out", "SignOut", "Home")
+
+}
+
